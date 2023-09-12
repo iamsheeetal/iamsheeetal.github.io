@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheetal Ambre</title>
+    <style>
+        .main {
+            margin: 0;
+            padding: 0;
+            background: url('img/aboutbg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-size: 28px;
+        }
+
+        /* Style your content */
+        .content {
+            text-align: center;
+            padding: 20px;
+            color: #2a414aff;
+            padding: 30px;
+            align-items: center;
+            font-size: 45px;
+        }
+
+
+        .description {
+            left: 10px;
+            padding: 10px;
+            font-size: 28px;
+            text-align: center;
+            line-height: 50px;
+            color:#2a414aff
+        }
+
+        .buttons {
+            padding: 60px;
+            font-size: 28px;
+            line-height: 50px;
+            align-items: center;
+        }
+
+        .button {
+            color: white;
+            background-color: rgba(178, 73, 122, 0.5);
+            ;
+            border-radius: 50px;
+            padding: 10px;
+            border: 2px solid white;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgba(123, 41, 90, 0.8);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .highlight {
+            color: #b2497aff;
+           }
+
+        /* Media query for smaller screens */
+        @media (max-width: 808px) {
+            .container {
+                text-align: center;
+            }
+
+            .column {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .description,
+            .buttons {
+                width: 100%;
+                text-align: center;
+            }
+
+            table {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            table td {
+                width: auto;
+                text-align: center;
+            }
+        }
+
+        /* Style for centering the table below the description */
+        .center-table {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Add margin for spacing */
+        }
+    </style>
+</head>
+
+<body class="main">
+    <!-- Your content goes here -->
+    <div class="content">
+        <h1>Welcome</h1>
+
+        <div class="container">
+            <!-- Two Columns -->
+            <div class="description">
+                <p>
+                    Hi! I am <span class="highlight"><b>Sheetal Ambre,</b> </span><br>
+                    <i>Welcome to my digital playground,
+                    where I transform ideas into captivating emails,<br>
+                    one pixel at a time.</i>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <div class="center-table"> <!-- Add this div to center the table -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/portfolio.html" class="button">Portfolio</a>
+                                </td>
+                                <td width="30px"></td>
+                                <td>
+                                    <a href="https://drive.google.com/file/d/1PT4dPIwdMHPNyq6a48EU1n2DP3UsWFnC/view?usp=drive_link" target="_blank" class="button">Resume</a>
+                                </td>                                                             
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

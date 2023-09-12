@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/Portfoliobg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .card {
+            width: calc(33.33% - 20px);
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                display: block;
+                /* Change to block layout on smaller screens */
+            }
+
+            .card {
+                width: 100%;
+                /* Make cards take full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1 style="text-align: center; color: #2a414aff; padding: 10px;">My Projects</h1>
+
+    <div class="container">
+
+        <!-- Project Cards -->
+
+        <div class="card">
+            <img src="img/ZoomThumbnail.jpg" alt="Zoom Project Thumbnail">
+            <div class="card-content">
+                <h3>Zoom</h3>
+                <p>Product Landing Page</p>
+                <a href="/Zoom Newsletter/landing.html" class="button">View Details</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/MeetupThumbnail.jpg" alt="Meetup Project Thumbnail">
+            <div class="card-content">
+                <h3>Meetup</h3>
+                <p>Product Landing page.</p>
+                <a href="/MeetUp Newsletter/landing.html" class="button">View Details</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/CourseraThumbnail.jpg" alt="Coursera Project Thumbnail">
+            <div class="card-content">
+                <h3>Coursera</h3>
+                <p>Product Landing Page.</p>
+                <a href="/Coursera Transactional Template/landing.html" class="button">View Details</a>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="/index.html" class="button back-button">Back to Profile</a>
+</body>
+</html>
